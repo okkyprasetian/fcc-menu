@@ -29,7 +29,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 40px;
+  row-gap: 50px;
   width: 80%;
   margin: 10px auto;
 }
@@ -42,6 +42,7 @@
 .card-img {
   width: 400px;
   height: 200px;
+  margin-bottom: 20px;
   border: 5px solid;
   border-radius: 5px;
   background-position: center center;
@@ -51,4 +52,7 @@
 .top-detail {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted;
 }
