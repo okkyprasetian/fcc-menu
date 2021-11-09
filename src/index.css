@@ -6,25 +6,54 @@
 :root {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  --theme-black: #4a6163;
+  --theme-white: #f9faf4;
+  --theme-red: #f17a7e;
+  --theme-orange: #f9a66c;
+  --theme-yellow: #ffc94b;
+}
+
+.App {
+  background-color: var(--theme-white);
 }
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   height: 100px;
+  padding-bottom: 20px;
+  color: var(--theme-black);
+  font-size: 1.5rem;
+}
+
+.slash {
+  height: 5px;
+  width: 100px;
+  margin-top: 10px;
+  background-color: var(--theme-yellow);
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 
 .filter {
   margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: var(--theme-yellow);
   cursor: pointer;
+  transition-duration: 0.7s;
+}
+
+.filter:hover {
+  color: var(--theme-white);
+  background-color: var(--theme-black);
 }
 
 .cards {
@@ -44,7 +73,7 @@
   width: 400px;
   height: 200px;
   margin-bottom: 20px;
-  border: 5px solid;
+  border: 5px solid var(--theme-yellow);
   border-radius: 5px;
   background-position: center center;
   background-size: 400px 300px;
@@ -55,5 +84,17 @@
   justify-content: space-between;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted var(--theme-black);
+}
+
+.title-detail {
+  color: var(--theme-red);
+}
+
+.price-detail {
+  color: var(--theme-black);
+}
+
+.bottom-detail {
+  color: var(--theme-orange)
 }
