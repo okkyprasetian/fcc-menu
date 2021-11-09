@@ -71,7 +71,7 @@
 
 .card-img {
   width: 400px;
-  height: 200px;
+  height: 220px;
   margin-bottom: 20px;
   border: 5px solid var(--theme-yellow);
   border-radius: 5px;
@@ -97,4 +97,48 @@
 
 .bottom-detail {
   color: var(--theme-orange)
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .slash {
+    width: 150px;
+  }
+
+  .nav {
+    height: 170px;
+  }
+
+  .filter {
+    margin: 0 20px;
+    padding: 7px 25px;
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 50px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card-img {
+    width: 200px;
+    height: 120px;
+    background-size: 200px 130px;
+  }
+
+  .card-detail {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .top-detail {
+    font-size: 1.05rem;
+  }
 }
