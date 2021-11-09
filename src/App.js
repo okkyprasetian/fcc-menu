@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Cards />
+      <Cards showMenu={showMenu} />
     </div>
   );
 }

@@ -1,11 +1,9 @@
 import Card from "./Card"
 
-function Cards() {
+function Cards({ showMenu }) {
     return (
         <div className="cards">
-            <Card />
-            <Card />
-            <Card />
+            {showMenu.map(obj => <Card key={obj.id} obj={obj} />)}
         </div>
     );
 }

@@ -1,16 +1,16 @@
-function Card() {
+function Card({ obj }) {
     return (
         <div className="card">
             <div className="img-container">
-                IMG
+                <img src={obj.img} alt="" className="card-img" />
             </div>
             <div className="card-detail">
                 <div className="top-detail">
-                    <h3>Steak</h3>
-                    <p>$ 50</p>
+                    <h3 className="title-detail">{obj.title}</h3>
+                    <p className="price-detail">${obj.price}</p>
                 </div>
                 <div className="bottom-detail">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores rem, et est culpa nisi tempora dignissimos quis accusamus at.</p>
+                    <p>{obj.desc}</p>
                 </div>
             </div>
         </div>
