@@ -1,8 +1,7 @@
 function Card({ obj }) {
     return (
         <div className="card">
-            <div className="img-container">
-                <img src={obj.img} alt="" className="card-img" />
+            <div className="card-img" style={{ backgroundImage: `url(${obj.img})` }}>
             </div>
             <div className="card-detail">
                 <div className="top-detail">
